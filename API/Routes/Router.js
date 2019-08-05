@@ -11,7 +11,7 @@ module.exports = function(app) {
 
 // registerUser Route
 	//app.route('/').post(odController.processRequest);
-	app.post('/', odController.processRequest {
+	app.post('/', function(req, res) {
 		res.send("got a post")
 	})
 
