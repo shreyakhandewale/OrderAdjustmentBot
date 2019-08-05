@@ -6,10 +6,12 @@ module.exports = function(app) {
 
 	app.get('/',function(req,res) {
     res.send(req.body);
-});
+	});
 
 // registerUser Route
 	app.route('/').post(odController.processRequest);
+
+	app.route('/').put(odController.changeRequest);
 };
 
 

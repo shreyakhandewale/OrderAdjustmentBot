@@ -4,7 +4,7 @@ var Schema = mongoose.Schema;
 var orderDetailsSchema = Schema({
 	username:{
  		type:String,
- 		required:true
+ 		required:false
 	},
 	orderid:{
  		type:Number,
