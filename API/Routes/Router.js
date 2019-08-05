@@ -5,7 +5,7 @@ module.exports = function(app) {
 	var apiRoutes =  express.Router();
 
 	app.get('/',function(req,res) {
-    res.send(req.body);
+    	res.send(req.body);
 	});
 
 // registerUser Route

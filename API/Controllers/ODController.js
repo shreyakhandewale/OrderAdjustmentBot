@@ -17,7 +17,7 @@ exports.processRequest = function(req, res) {
   }
 }
 
-exports.changeRequest = function(req, res) {
+/**exports.changeRequest = function(req, res) {
   //if (req.body.result.action == "changedate") {
     //changeDate(req,res)
   //} 
@@ -27,7 +27,7 @@ exports.changeRequest = function(req, res) {
   if (req.body.result.action == "changeshippingmethod") {
     changeShipping(req,res);
   } 
-}
+}*/
 
 //Return the scheduled delivery date
 function getDate(req, res) {
