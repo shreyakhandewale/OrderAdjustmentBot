@@ -31,11 +31,12 @@ exports.processRequest = function(req, res) {
 
 //Return the scheduled delivery date
 function getDate(req, res) {
-  let parameters = req.body.queryResult.parameters;
+  let parameters = req.body["queryResult"];
+  //console.log(parameters);
 
   OrderDetails.findOne({orderid:parameters["orderid"]}, function(err, orderExists) {
     if (err) {
-      console.log("error")
+      //console.log("error")
       return res.json({
         speech: 'Something went wrong!',
         displayText: 'Something went wrong!',
@@ -43,7 +44,7 @@ function getDate(req, res) {
       });
     }
     if (orderExists) {
-      console.log("orderExists")
+      //console.log("orderExists")
       globalorderid = parameters["orderid"];
       return res.json({
         speech: "Your order is scheduled for " + orderExists.deliverydate + ". When would you like to reschedule your order for?",
@@ -51,7 +52,7 @@ function getDate(req, res) {
         source: 'order info 2'
       });
     } else {
-      console.log("couldn't find order")
+      //console.log("couldn't find order")
       return res.json({
         speech: 'Sorry, we couldn\'t find your order',
         displayText: 'Sorry, we couldn\'t find your order',
@@ -63,7 +64,7 @@ function getDate(req, res) {
 
 //Return the scheduled shipping address
 function getLocation(req, res) {
-  let parameters = req.body.queryResult.parameters;
+  let parameters = req.body["queryResult"];
 
   OrderDetails.findOne({orderid:parameters["orderid"]}, function(err, orderExists) {
     if (err) {
@@ -92,7 +93,7 @@ function getLocation(req, res) {
 
 //Return the current shipping method
 function getShipping(req, res) {
-  let parameters = req.body.queryResult.parameters;
+  let parameters = req.body["queryResult"];
 
   OrderDetails.findOne({orderid:parameters["orderid"]}, function(err, orderExists) {
     if (err) {
