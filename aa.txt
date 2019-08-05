@@ -1,69 +1,3 @@
-2019-08-05T05:01:11.529965+00:00 app[api]: Deploy 06020296 by user shreyadevacct@gmail.com
-2019-08-05T05:01:11.529965+00:00 app[api]: Release v9 created by user shreyadevacct@gmail.com
-2019-08-05T05:01:12.000000+00:00 app[api]: Build succeeded
-2019-08-05T05:01:14.471953+00:00 heroku[web.1]: Starting process with command `npm start`
-2019-08-05T05:01:20.097158+00:00 heroku[web.1]: State changed from starting to crashed
-2019-08-05T05:01:20.075676+00:00 heroku[web.1]: Process exited with status 1
-2019-08-05T05:01:19.784326+00:00 app[web.1]: 
-2019-08-05T05:01:19.784341+00:00 app[web.1]: > orderadjustmentbot@1.0.0 start /app
-2019-08-05T05:01:19.784343+00:00 app[web.1]: > node index.js
-2019-08-05T05:01:19.784345+00:00 app[web.1]: 
-2019-08-05T05:01:19.962326+00:00 app[web.1]: internal/modules/cjs/loader.js:638
-2019-08-05T05:01:19.962330+00:00 app[web.1]: throw err;
-2019-08-05T05:01:19.962332+00:00 app[web.1]: ^
-2019-08-05T05:01:19.962334+00:00 app[web.1]: 
-2019-08-05T05:01:19.962336+00:00 app[web.1]: Error: Cannot find module '/app/index.js'
-2019-08-05T05:01:19.962338+00:00 app[web.1]: at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
-2019-08-05T05:01:19.962341+00:00 app[web.1]: at Function.Module._load (internal/modules/cjs/loader.js:562:25)
-2019-08-05T05:01:19.962343+00:00 app[web.1]: at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
-2019-08-05T05:01:19.962345+00:00 app[web.1]: at startup (internal/bootstrap/node.js:283:19)
-2019-08-05T05:01:19.962347+00:00 app[web.1]: at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
-2019-08-05T05:01:19.974163+00:00 app[web.1]: npm ERR! code ELIFECYCLE
-2019-08-05T05:01:19.974867+00:00 app[web.1]: npm ERR! errno 1
-2019-08-05T05:01:19.977119+00:00 app[web.1]: npm ERR! orderadjustmentbot@1.0.0 start: `node index.js`
-2019-08-05T05:01:19.977388+00:00 app[web.1]: npm ERR! Exit status 1
-2019-08-05T05:01:19.977854+00:00 app[web.1]: npm ERR!
-2019-08-05T05:01:19.978134+00:00 app[web.1]: npm ERR! Failed at the orderadjustmentbot@1.0.0 start script.
-2019-08-05T05:01:19.978565+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
-2019-08-05T05:01:20.011657+00:00 app[web.1]: 
-2019-08-05T05:01:20.011985+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
-2019-08-05T05:01:20.012218+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2019-08-05T05_01_19_980Z-debug.log
-2019-08-05T05:01:21.487927+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=order-adjustment-bot.herokuapp.com request_id=e8d64529-195f-40b0-9d33-323980efbf99 fwd="76.77.185.191" dyno= connect= service= status=503 bytes= protocol=https
-2019-08-05T05:01:21.745164+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=order-adjustment-bot.herokuapp.com request_id=e48d53b7-7233-4b36-be58-daa78c3dc5e7 fwd="76.77.185.191" dyno= connect= service= status=503 bytes= protocol=https
-2019-08-05T05:04:18.000000+00:00 app[api]: Build started by user shreyadevacct@gmail.com
-2019-08-05T05:04:41.299466+00:00 heroku[web.1]: State changed from crashed to starting
-2019-08-05T05:04:40.851628+00:00 app[api]: Deploy 6ef943c8 by user shreyadevacct@gmail.com
-2019-08-05T05:04:40.851628+00:00 app[api]: Release v10 created by user shreyadevacct@gmail.com
-2019-08-05T05:04:41.000000+00:00 app[api]: Build succeeded
-2019-08-05T05:04:44.010477+00:00 heroku[web.1]: Starting process with command `npm start`
-2019-08-05T05:04:47.949841+00:00 heroku[web.1]: State changed from starting to crashed
-2019-08-05T05:04:47.927165+00:00 heroku[web.1]: Process exited with status 1
-2019-08-05T05:04:47.615134+00:00 app[web.1]: 
-2019-08-05T05:04:47.615154+00:00 app[web.1]: > orderadjustmentbot@1.0.0 start /app
-2019-08-05T05:04:47.615156+00:00 app[web.1]: > node index.js
-2019-08-05T05:04:47.615158+00:00 app[web.1]: 
-2019-08-05T05:04:47.802693+00:00 app[web.1]: internal/modules/cjs/loader.js:638
-2019-08-05T05:04:47.802698+00:00 app[web.1]: throw err;
-2019-08-05T05:04:47.802700+00:00 app[web.1]: ^
-2019-08-05T05:04:47.802702+00:00 app[web.1]: 
-2019-08-05T05:04:47.802705+00:00 app[web.1]: Error: Cannot find module '/app/index.js'
-2019-08-05T05:04:47.802707+00:00 app[web.1]: at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
-2019-08-05T05:04:47.802709+00:00 app[web.1]: at Function.Module._load (internal/modules/cjs/loader.js:562:25)
-2019-08-05T05:04:47.802712+00:00 app[web.1]: at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
-2019-08-05T05:04:47.802715+00:00 app[web.1]: at startup (internal/bootstrap/node.js:283:19)
-2019-08-05T05:04:47.802717+00:00 app[web.1]: at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
-2019-08-05T05:04:47.811706+00:00 app[web.1]: npm ERR! code ELIFECYCLE
-2019-08-05T05:04:47.812695+00:00 app[web.1]: npm ERR! errno 1
-2019-08-05T05:04:47.815358+00:00 app[web.1]: npm ERR! orderadjustmentbot@1.0.0 start: `node index.js`
-2019-08-05T05:04:47.815764+00:00 app[web.1]: npm ERR! Exit status 1
-2019-08-05T05:04:47.816324+00:00 app[web.1]: npm ERR!
-2019-08-05T05:04:47.816718+00:00 app[web.1]: npm ERR! Failed at the orderadjustmentbot@1.0.0 start script.
-2019-08-05T05:04:47.817077+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
-2019-08-05T05:04:47.836789+00:00 app[web.1]: 
-2019-08-05T05:04:47.837524+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
-2019-08-05T05:04:47.837749+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2019-08-05T05_04_47_819Z-debug.log
-2019-08-05T05:04:49.265736+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=order-adjustment-bot.herokuapp.com request_id=f5e4423d-b5a5-48df-baf8-562afc39795d fwd="76.77.185.191" dyno= connect= service= status=503 bytes= protocol=https
-2019-08-05T05:04:49.514828+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=order-adjustment-bot.herokuapp.com request_id=2f8ecefb-6031-49c9-8d8e-38ac20e3a086 fwd="76.77.185.191" dyno= connect= service= status=503 bytes= protocol=https
 2019-08-05T05:09:50.000000+00:00 app[api]: Build started by user shreyadevacct@gmail.com
 2019-08-05T05:10:09.155111+00:00 heroku[web.1]: State changed from crashed to starting
 2019-08-05T05:10:08.942111+00:00 app[api]: Deploy aaafa8be by user shreyadevacct@gmail.com
@@ -126,3 +60,53 @@
 2019-08-05T05:11:08.634191+00:00 app[web.1]: 
 2019-08-05T05:11:08.634391+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
 2019-08-05T05:11:08.634530+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2019-08-05T05_11_08_628Z-debug.log
+2019-08-05T05:17:30.000000+00:00 app[api]: Build started by user shreyadevacct@gmail.com
+2019-08-05T05:17:49.134119+00:00 app[api]: Release v12 created by user shreyadevacct@gmail.com
+2019-08-05T05:17:49.134119+00:00 app[api]: Deploy bbaa07b2 by user shreyadevacct@gmail.com
+2019-08-05T05:17:49.404779+00:00 heroku[web.1]: State changed from crashed to starting
+2019-08-05T05:17:49.000000+00:00 app[api]: Build succeeded
+2019-08-05T05:17:51.338016+00:00 heroku[web.1]: Starting process with command `npm start`
+2019-08-05T05:17:54.837762+00:00 heroku[web.1]: State changed from starting to crashed
+2019-08-05T05:17:54.749631+00:00 app[web.1]: npm ERR! missing script: start
+2019-08-05T05:17:54.755417+00:00 app[web.1]: 
+2019-08-05T05:17:54.755675+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2019-08-05T05:17:54.755762+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2019-08-05T05_17_54_751Z-debug.log
+2019-08-05T05:17:54.812099+00:00 heroku[web.1]: Process exited with status 1
+2019-08-05T05:17:59.539155+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=order-adjustment-bot.herokuapp.com request_id=5337a9c7-9f42-4f5f-9c17-f2eb1ce1e181 fwd="76.77.185.191" dyno= connect= service= status=503 bytes= protocol=https
+2019-08-05T05:17:59.712723+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=order-adjustment-bot.herokuapp.com request_id=c725ebe8-cbe8-49ea-a0b7-4b02ce155e29 fwd="76.77.185.191" dyno= connect= service= status=503 bytes= protocol=https
+2019-08-05T05:22:00.571925+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=order-adjustment-bot.herokuapp.com request_id=4a3b6b1b-944d-4ca2-8bc5-2043b4208d2c fwd="76.77.185.191" dyno= connect= service= status=503 bytes= protocol=https
+2019-08-05T05:22:00.728926+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=order-adjustment-bot.herokuapp.com request_id=6e17cddc-9efa-498d-8885-6b7458b08470 fwd="76.77.185.191" dyno= connect= service= status=503 bytes= protocol=https
+2019-08-05T05:24:04.870108+00:00 heroku[web.1]: State changed from crashed to starting
+2019-08-05T05:24:06.990714+00:00 heroku[web.1]: Starting process with command `npm start`
+2019-08-05T05:24:09.132068+00:00 heroku[web.1]: State changed from starting to crashed
+2019-08-05T05:24:09.036667+00:00 app[web.1]: npm ERR! missing script: start
+2019-08-05T05:24:09.045182+00:00 app[web.1]: 
+2019-08-05T05:24:09.045548+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2019-08-05T05:24:09.045737+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2019-08-05T05_24_09_038Z-debug.log
+2019-08-05T05:24:09.114316+00:00 heroku[web.1]: Process exited with status 1
+2019-08-05T05:28:23.000000+00:00 app[api]: Build started by user shreyadevacct@gmail.com
+2019-08-05T05:28:43.514331+00:00 heroku[web.1]: State changed from crashed to starting
+2019-08-05T05:28:43.193014+00:00 app[api]: Deploy 3c80a842 by user shreyadevacct@gmail.com
+2019-08-05T05:28:43.193014+00:00 app[api]: Release v13 created by user shreyadevacct@gmail.com
+2019-08-05T05:28:43.000000+00:00 app[api]: Build succeeded
+2019-08-05T05:28:46.835747+00:00 heroku[web.1]: Starting process with command `npm start`
+2019-08-05T05:28:50.360264+00:00 heroku[web.1]: State changed from starting to crashed
+2019-08-05T05:28:50.339882+00:00 heroku[web.1]: Process exited with status 1
+2019-08-05T05:28:50.264181+00:00 app[web.1]: npm ERR! missing script: start
+2019-08-05T05:28:50.282355+00:00 app[web.1]: 
+2019-08-05T05:28:50.282836+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2019-08-05T05:28:50.283058+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2019-08-05T05_28_50_266Z-debug.log
+2019-08-05T05:28:52.036446+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=order-adjustment-bot.herokuapp.com request_id=956f9231-9a76-4aa5-a244-b41f3d70a86d fwd="76.77.185.191" dyno= connect= service= status=503 bytes= protocol=https
+2019-08-05T05:28:52.230361+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=order-adjustment-bot.herokuapp.com request_id=2a3e05da-3381-4a55-9b72-04c78904f7e8 fwd="76.77.185.191" dyno= connect= service= status=503 bytes= protocol=https
+2019-08-05T05:35:28.512088+00:00 heroku[web.1]: State changed from crashed to starting
+2019-08-05T05:35:31.325221+00:00 heroku[web.1]: Starting process with command `npm start`
+2019-08-05T05:35:34.264591+00:00 heroku[web.1]: State changed from starting to crashed
+2019-08-05T05:35:34.148182+00:00 app[web.1]: npm ERR! missing script: start
+2019-08-05T05:35:34.157309+00:00 app[web.1]: 
+2019-08-05T05:35:34.157990+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2019-08-05T05:35:34.158334+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2019-08-05T05_35_34_150Z-debug.log
+2019-08-05T05:35:34.244434+00:00 heroku[web.1]: Process exited with status 1
+2019-08-05T05:37:12.592907+00:00 heroku[run.9140]: Awaiting client
+2019-08-05T05:37:10.210861+00:00 app[api]: Starting process with command `bash` by user shreyadevacct@gmail.com
+2019-08-05T05:37:12.866883+00:00 heroku[run.9140]: State changed from starting to up
+2019-08-05T05:37:12.640806+00:00 heroku[run.9140]: Starting process with command `bash`
