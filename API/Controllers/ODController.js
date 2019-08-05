@@ -35,6 +35,7 @@ function getDate(req, res) {
 
   OrderDetails.findOne({orderid:parameters["orderid"]}, function(err, orderExists) {
     if (err) {
+      console.log("error")
       return res.json({
         speech: 'Something went wrong!',
         displayText: 'Something went wrong!',
@@ -42,6 +43,7 @@ function getDate(req, res) {
       });
     }
     if (orderExists) {
+      console.log("orderExists")
       globalorderid = parameters["orderid"];
       return res.json({
         speech: "Your order is scheduled for " + orderExists.deliverydate + ". When would you like to reschedule your order for?",
@@ -49,6 +51,7 @@ function getDate(req, res) {
         source: 'order info 2'
       });
     } else {
+      console.log("couldn't find order")
       return res.json({
         speech: 'Sorry, we couldn\'t find your order',
         displayText: 'Sorry, we couldn\'t find your order',
