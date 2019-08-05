@@ -29,8 +29,8 @@ server.use(bodyParser.json());
 var routes = require('./API/Routes/Router'); //importing route
 routes(server); //register the route
 
-server.listen(8000, function () {
-	console.log("Server is up and listening on port 8000");
+server.listen(process.env.PORT || 8000, function () {
+	console.log("Server is up and listening on port " + process.env.PORT);
 });
 
 //process.env.PORT
