@@ -6,13 +6,13 @@ var globalorderid = 0;
 // var OrderDetails = mongoose.model('OrderDetails', orderDetailsSchema);
 
 exports.processRequest = function(req, res) {
-  if (req.body.result.action == "date") {
+  if (req.body.queryResult.action == "date") {
     getDate(req,res)
   } 
-  if (req.body.result.action == "address") {
+  if (req.body.queryResult.action == "address") {
     getLocation(req,res)
   }
-  if (req.body.result.action == "shippingmethod") {
+  if (req.body.queryResult.action == "shippingmethod") {
     getShipping(req,res)
   }
 }

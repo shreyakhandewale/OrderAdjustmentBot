@@ -1,112 +1,151 @@
-2019-08-05T05:09:50.000000+00:00 app[api]: Build started by user shreyadevacct@gmail.com
-2019-08-05T05:10:09.155111+00:00 heroku[web.1]: State changed from crashed to starting
-2019-08-05T05:10:08.942111+00:00 app[api]: Deploy aaafa8be by user shreyadevacct@gmail.com
-2019-08-05T05:10:08.942111+00:00 app[api]: Release v11 created by user shreyadevacct@gmail.com
-2019-08-05T05:10:09.000000+00:00 app[api]: Build succeeded
-2019-08-05T05:10:11.079250+00:00 heroku[web.1]: Starting process with command `npm start`
-2019-08-05T05:10:13.286392+00:00 heroku[web.1]: State changed from starting to crashed
-2019-08-05T05:10:13.266874+00:00 heroku[web.1]: Process exited with status 1
-2019-08-05T05:10:13.027596+00:00 app[web.1]: 
-2019-08-05T05:10:13.027617+00:00 app[web.1]: > orderadjustmentbot@1.0.0 start /app
-2019-08-05T05:10:13.027619+00:00 app[web.1]: > node ./index.js
-2019-08-05T05:10:13.027621+00:00 app[web.1]: 
-2019-08-05T05:10:13.210921+00:00 app[web.1]: internal/modules/cjs/loader.js:638
-2019-08-05T05:10:13.210924+00:00 app[web.1]: throw err;
-2019-08-05T05:10:13.210926+00:00 app[web.1]: ^
-2019-08-05T05:10:13.210927+00:00 app[web.1]: 
-2019-08-05T05:10:13.210930+00:00 app[web.1]: Error: Cannot find module '/app/index.js'
-2019-08-05T05:10:13.210932+00:00 app[web.1]: at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
-2019-08-05T05:10:13.210934+00:00 app[web.1]: at Function.Module._load (internal/modules/cjs/loader.js:562:25)
-2019-08-05T05:10:13.210935+00:00 app[web.1]: at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
-2019-08-05T05:10:13.210937+00:00 app[web.1]: at startup (internal/bootstrap/node.js:283:19)
-2019-08-05T05:10:13.210939+00:00 app[web.1]: at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
-2019-08-05T05:10:13.216516+00:00 app[web.1]: npm ERR! code ELIFECYCLE
-2019-08-05T05:10:13.216895+00:00 app[web.1]: npm ERR! errno 1
-2019-08-05T05:10:13.217987+00:00 app[web.1]: npm ERR! orderadjustmentbot@1.0.0 start: `node ./index.js`
-2019-08-05T05:10:13.218097+00:00 app[web.1]: npm ERR! Exit status 1
-2019-08-05T05:10:13.218298+00:00 app[web.1]: npm ERR!
-2019-08-05T05:10:13.218414+00:00 app[web.1]: npm ERR! Failed at the orderadjustmentbot@1.0.0 start script.
-2019-08-05T05:10:13.218519+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
-2019-08-05T05:10:13.222553+00:00 app[web.1]: 
-2019-08-05T05:10:13.222701+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
-2019-08-05T05:10:13.222772+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2019-08-05T05_10_13_219Z-debug.log
-2019-08-05T05:10:14.105071+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=order-adjustment-bot.herokuapp.com request_id=63b6c188-272f-4008-b0e4-e2a8ab572aaf fwd="76.77.185.191" dyno= connect= service= status=503 bytes= protocol=https
-2019-08-05T05:10:14.360915+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=order-adjustment-bot.herokuapp.com request_id=97c84522-38e1-4fdf-bd2e-331ddb6bd3db fwd="76.77.185.191" dyno= connect= service= status=503 bytes= protocol=https
-2019-08-05T05:11:04.060025+00:00 heroku[web.1]: State changed from crashed to starting
-2019-08-05T05:11:06.492941+00:00 heroku[web.1]: Starting process with command `npm start`
-2019-08-05T05:11:08.723261+00:00 heroku[web.1]: State changed from starting to crashed
-2019-08-05T05:11:08.703394+00:00 heroku[web.1]: Process exited with status 1
-2019-08-05T05:11:08.515482+00:00 app[web.1]: 
-2019-08-05T05:11:08.515503+00:00 app[web.1]: > orderadjustmentbot@1.0.0 start /app
-2019-08-05T05:11:08.515505+00:00 app[web.1]: > node ./index.js
-2019-08-05T05:11:08.515507+00:00 app[web.1]: 
-2019-08-05T05:11:08.617663+00:00 app[web.1]: internal/modules/cjs/loader.js:638
-2019-08-05T05:11:08.617667+00:00 app[web.1]: throw err;
-2019-08-05T05:11:08.617669+00:00 app[web.1]: ^
-2019-08-05T05:11:08.617671+00:00 app[web.1]: 
-2019-08-05T05:11:08.617673+00:00 app[web.1]: Error: Cannot find module '/app/index.js'
-2019-08-05T05:11:08.617676+00:00 app[web.1]: at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
-2019-08-05T05:11:08.617678+00:00 app[web.1]: at Function.Module._load (internal/modules/cjs/loader.js:562:25)
-2019-08-05T05:11:08.617682+00:00 app[web.1]: at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
-2019-08-05T05:11:08.617684+00:00 app[web.1]: at startup (internal/bootstrap/node.js:283:19)
-2019-08-05T05:11:08.617686+00:00 app[web.1]: at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
-2019-08-05T05:11:08.624780+00:00 app[web.1]: npm ERR! code ELIFECYCLE
-2019-08-05T05:11:08.625328+00:00 app[web.1]: npm ERR! errno 1
-2019-08-05T05:11:08.626628+00:00 app[web.1]: npm ERR! orderadjustmentbot@1.0.0 start: `node ./index.js`
-2019-08-05T05:11:08.626804+00:00 app[web.1]: npm ERR! Exit status 1
-2019-08-05T05:11:08.627060+00:00 app[web.1]: npm ERR!
-2019-08-05T05:11:08.627270+00:00 app[web.1]: npm ERR! Failed at the orderadjustmentbot@1.0.0 start script.
-2019-08-05T05:11:08.627407+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
-2019-08-05T05:11:08.634191+00:00 app[web.1]: 
-2019-08-05T05:11:08.634391+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
-2019-08-05T05:11:08.634530+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2019-08-05T05_11_08_628Z-debug.log
-2019-08-05T05:17:30.000000+00:00 app[api]: Build started by user shreyadevacct@gmail.com
-2019-08-05T05:17:49.134119+00:00 app[api]: Release v12 created by user shreyadevacct@gmail.com
-2019-08-05T05:17:49.134119+00:00 app[api]: Deploy bbaa07b2 by user shreyadevacct@gmail.com
-2019-08-05T05:17:49.404779+00:00 heroku[web.1]: State changed from crashed to starting
-2019-08-05T05:17:49.000000+00:00 app[api]: Build succeeded
-2019-08-05T05:17:51.338016+00:00 heroku[web.1]: Starting process with command `npm start`
-2019-08-05T05:17:54.837762+00:00 heroku[web.1]: State changed from starting to crashed
-2019-08-05T05:17:54.749631+00:00 app[web.1]: npm ERR! missing script: start
-2019-08-05T05:17:54.755417+00:00 app[web.1]: 
-2019-08-05T05:17:54.755675+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
-2019-08-05T05:17:54.755762+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2019-08-05T05_17_54_751Z-debug.log
-2019-08-05T05:17:54.812099+00:00 heroku[web.1]: Process exited with status 1
-2019-08-05T05:17:59.539155+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=order-adjustment-bot.herokuapp.com request_id=5337a9c7-9f42-4f5f-9c17-f2eb1ce1e181 fwd="76.77.185.191" dyno= connect= service= status=503 bytes= protocol=https
-2019-08-05T05:17:59.712723+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=order-adjustment-bot.herokuapp.com request_id=c725ebe8-cbe8-49ea-a0b7-4b02ce155e29 fwd="76.77.185.191" dyno= connect= service= status=503 bytes= protocol=https
-2019-08-05T05:22:00.571925+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=order-adjustment-bot.herokuapp.com request_id=4a3b6b1b-944d-4ca2-8bc5-2043b4208d2c fwd="76.77.185.191" dyno= connect= service= status=503 bytes= protocol=https
-2019-08-05T05:22:00.728926+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=order-adjustment-bot.herokuapp.com request_id=6e17cddc-9efa-498d-8885-6b7458b08470 fwd="76.77.185.191" dyno= connect= service= status=503 bytes= protocol=https
-2019-08-05T05:24:04.870108+00:00 heroku[web.1]: State changed from crashed to starting
-2019-08-05T05:24:06.990714+00:00 heroku[web.1]: Starting process with command `npm start`
-2019-08-05T05:24:09.132068+00:00 heroku[web.1]: State changed from starting to crashed
-2019-08-05T05:24:09.036667+00:00 app[web.1]: npm ERR! missing script: start
-2019-08-05T05:24:09.045182+00:00 app[web.1]: 
-2019-08-05T05:24:09.045548+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
-2019-08-05T05:24:09.045737+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2019-08-05T05_24_09_038Z-debug.log
-2019-08-05T05:24:09.114316+00:00 heroku[web.1]: Process exited with status 1
-2019-08-05T05:28:23.000000+00:00 app[api]: Build started by user shreyadevacct@gmail.com
-2019-08-05T05:28:43.514331+00:00 heroku[web.1]: State changed from crashed to starting
-2019-08-05T05:28:43.193014+00:00 app[api]: Deploy 3c80a842 by user shreyadevacct@gmail.com
-2019-08-05T05:28:43.193014+00:00 app[api]: Release v13 created by user shreyadevacct@gmail.com
-2019-08-05T05:28:43.000000+00:00 app[api]: Build succeeded
-2019-08-05T05:28:46.835747+00:00 heroku[web.1]: Starting process with command `npm start`
-2019-08-05T05:28:50.360264+00:00 heroku[web.1]: State changed from starting to crashed
-2019-08-05T05:28:50.339882+00:00 heroku[web.1]: Process exited with status 1
-2019-08-05T05:28:50.264181+00:00 app[web.1]: npm ERR! missing script: start
-2019-08-05T05:28:50.282355+00:00 app[web.1]: 
-2019-08-05T05:28:50.282836+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
-2019-08-05T05:28:50.283058+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2019-08-05T05_28_50_266Z-debug.log
-2019-08-05T05:28:52.036446+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=order-adjustment-bot.herokuapp.com request_id=956f9231-9a76-4aa5-a244-b41f3d70a86d fwd="76.77.185.191" dyno= connect= service= status=503 bytes= protocol=https
-2019-08-05T05:28:52.230361+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=order-adjustment-bot.herokuapp.com request_id=2a3e05da-3381-4a55-9b72-04c78904f7e8 fwd="76.77.185.191" dyno= connect= service= status=503 bytes= protocol=https
-2019-08-05T05:35:28.512088+00:00 heroku[web.1]: State changed from crashed to starting
-2019-08-05T05:35:31.325221+00:00 heroku[web.1]: Starting process with command `npm start`
-2019-08-05T05:35:34.264591+00:00 heroku[web.1]: State changed from starting to crashed
-2019-08-05T05:35:34.148182+00:00 app[web.1]: npm ERR! missing script: start
-2019-08-05T05:35:34.157309+00:00 app[web.1]: 
-2019-08-05T05:35:34.157990+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
-2019-08-05T05:35:34.158334+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2019-08-05T05_35_34_150Z-debug.log
-2019-08-05T05:35:34.244434+00:00 heroku[web.1]: Process exited with status 1
-2019-08-05T05:37:12.592907+00:00 heroku[run.9140]: Awaiting client
-2019-08-05T05:37:10.210861+00:00 app[api]: Starting process with command `bash` by user shreyadevacct@gmail.com
-2019-08-05T05:37:12.866883+00:00 heroku[run.9140]: State changed from starting to up
-2019-08-05T05:37:12.640806+00:00 heroku[run.9140]: Starting process with command `bash`
+2019-08-05T05:47:30.301818+00:00 app[web.1]: at connect (/app/node_modules/mongodb-core/lib/connection/pool.js:557:14)
+2019-08-05T05:47:30.301820+00:00 app[web.1]: at callback (/app/node_modules/mongodb-core/lib/connection/connect.js:109:5)
+2019-08-05T05:47:30.301822+00:00 app[web.1]: at runCommand (/app/node_modules/mongodb-core/lib/connection/connect.js:129:7)
+2019-08-05T05:47:30.301824+00:00 app[web.1]: at Connection.errorHandler (/app/node_modules/mongodb-core/lib/connection/connect.js:321:5)
+2019-08-05T05:47:30.301826+00:00 app[web.1]: at Object.onceWrapper (events.js:286:20)
+2019-08-05T05:47:30.301828+00:00 app[web.1]: at Connection.emit (events.js:198:13)
+2019-08-05T05:47:30.301830+00:00 app[web.1]: at TLSSocket.<anonymous> (/app/node_modules/mongodb-core/lib/connection/connection.js:350:12)
+2019-08-05T05:47:30.301832+00:00 app[web.1]: at Object.onceWrapper (events.js:286:20)
+2019-08-05T05:47:30.301834+00:00 app[web.1]: at TLSSocket.emit (events.js:198:13)
+2019-08-05T05:47:30.301836+00:00 app[web.1]: at _handle.close (net.js:606:12)
+2019-08-05T05:47:30.301838+00:00 app[web.1]: at TCP.done (_tls_wrap.js:388:7)
+2019-08-05T05:47:30.301883+00:00 app[web.1]: (node:23) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+2019-08-05T05:47:30.301952+00:00 app[web.1]: (node:23) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+2019-08-05T05:47:31.798588+00:00 heroku[router]: at=info method=GET path="/" host=order-adjustment-bot.herokuapp.com request_id=44cb348b-5d5c-4bcb-884d-8d7b3105baec fwd="76.77.185.191" dyno=web.1 connect=0ms service=10ms status=200 bytes=206 protocol=https
+2019-08-05T05:47:31.947245+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=order-adjustment-bot.herokuapp.com request_id=8a7e76bf-d03e-4511-9d75-fc311b0bbadf fwd="76.77.185.191" dyno=web.1 connect=0ms service=4ms status=404 bytes=394 protocol=https
+2019-08-05T05:56:36.055932+00:00 heroku[router]: at=info method=POST path="/" host=order-adjustment-bot.herokuapp.com request_id=a19358a4-dd0f-4b3b-a50e-7d0070c33c51 fwd="64.233.172.10" dyno=web.1 connect=1ms service=16ms status=500 bytes=404 protocol=https
+2019-08-05T05:56:36.055429+00:00 app[web.1]: TypeError: Cannot read property 'action' of undefined
+2019-08-05T05:56:36.055445+00:00 app[web.1]: at exports.processRequest (/app/API/Controllers/ODController.js:9:23)
+2019-08-05T05:56:36.055448+00:00 app[web.1]: at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+2019-08-05T05:56:36.055449+00:00 app[web.1]: at next (/app/node_modules/express/lib/router/route.js:137:13)
+2019-08-05T05:56:36.055451+00:00 app[web.1]: at Route.dispatch (/app/node_modules/express/lib/router/route.js:112:3)
+2019-08-05T05:56:36.055452+00:00 app[web.1]: at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+2019-08-05T05:56:36.055454+00:00 app[web.1]: at /app/node_modules/express/lib/router/index.js:281:22
+2019-08-05T05:56:36.055456+00:00 app[web.1]: at Function.process_params (/app/node_modules/express/lib/router/index.js:335:12)
+2019-08-05T05:56:36.055457+00:00 app[web.1]: at next (/app/node_modules/express/lib/router/index.js:275:10)
+2019-08-05T05:56:36.055459+00:00 app[web.1]: at /app/node_modules/body-parser/lib/read.js:130:5
+2019-08-05T05:56:36.055460+00:00 app[web.1]: at invokeCallback (/app/node_modules/raw-body/index.js:224:16)
+2019-08-05T05:56:36.055462+00:00 app[web.1]: at done (/app/node_modules/raw-body/index.js:213:7)
+2019-08-05T05:56:36.055464+00:00 app[web.1]: at IncomingMessage.onEnd (/app/node_modules/raw-body/index.js:273:7)
+2019-08-05T05:56:36.055466+00:00 app[web.1]: at IncomingMessage.emit (events.js:203:15)
+2019-08-05T05:56:36.055468+00:00 app[web.1]: at endReadableNT (_stream_readable.js:1145:12)
+2019-08-05T05:56:36.055469+00:00 app[web.1]: at process._tickCallback (internal/process/next_tick.js:63:19)
+2019-08-05T05:56:38.971364+00:00 heroku[router]: at=info method=POST path="/" host=order-adjustment-bot.herokuapp.com request_id=ef057694-8ee5-475e-999f-68a1e46e9838 fwd="64.233.172.6" dyno=web.1 connect=1ms service=2ms status=500 bytes=404 protocol=https
+2019-08-05T05:56:38.969887+00:00 app[web.1]: TypeError: Cannot read property 'action' of undefined
+2019-08-05T05:56:38.969903+00:00 app[web.1]: at exports.processRequest (/app/API/Controllers/ODController.js:9:23)
+2019-08-05T05:56:38.969905+00:00 app[web.1]: at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+2019-08-05T05:56:38.969907+00:00 app[web.1]: at next (/app/node_modules/express/lib/router/route.js:137:13)
+2019-08-05T05:56:38.969908+00:00 app[web.1]: at Route.dispatch (/app/node_modules/express/lib/router/route.js:112:3)
+2019-08-05T05:56:38.969910+00:00 app[web.1]: at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+2019-08-05T05:56:38.969911+00:00 app[web.1]: at /app/node_modules/express/lib/router/index.js:281:22
+2019-08-05T05:56:38.969913+00:00 app[web.1]: at Function.process_params (/app/node_modules/express/lib/router/index.js:335:12)
+2019-08-05T05:56:38.969915+00:00 app[web.1]: at next (/app/node_modules/express/lib/router/index.js:275:10)
+2019-08-05T05:56:38.969916+00:00 app[web.1]: at /app/node_modules/body-parser/lib/read.js:130:5
+2019-08-05T05:56:38.969918+00:00 app[web.1]: at invokeCallback (/app/node_modules/raw-body/index.js:224:16)
+2019-08-05T05:56:38.969920+00:00 app[web.1]: at done (/app/node_modules/raw-body/index.js:213:7)
+2019-08-05T05:56:38.969921+00:00 app[web.1]: at IncomingMessage.onEnd (/app/node_modules/raw-body/index.js:273:7)
+2019-08-05T05:56:38.969923+00:00 app[web.1]: at IncomingMessage.emit (events.js:203:15)
+2019-08-05T05:56:38.969925+00:00 app[web.1]: at endReadableNT (_stream_readable.js:1145:12)
+2019-08-05T05:56:38.969926+00:00 app[web.1]: at process._tickCallback (internal/process/next_tick.js:63:19)
+2019-08-05T05:56:42.309906+00:00 heroku[router]: at=info method=POST path="/" host=order-adjustment-bot.herokuapp.com request_id=5b2f7626-c694-42af-98c1-bba98f17b920 fwd="64.233.172.4" dyno=web.1 connect=0ms service=1ms status=500 bytes=404 protocol=https
+2019-08-05T05:56:42.309148+00:00 app[web.1]: TypeError: Cannot read property 'action' of undefined
+2019-08-05T05:56:42.309163+00:00 app[web.1]: at exports.processRequest (/app/API/Controllers/ODController.js:9:23)
+2019-08-05T05:56:42.309166+00:00 app[web.1]: at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+2019-08-05T05:56:42.309168+00:00 app[web.1]: at next (/app/node_modules/express/lib/router/route.js:137:13)
+2019-08-05T05:56:42.309170+00:00 app[web.1]: at Route.dispatch (/app/node_modules/express/lib/router/route.js:112:3)
+2019-08-05T05:56:42.309176+00:00 app[web.1]: at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+2019-08-05T05:56:42.309178+00:00 app[web.1]: at /app/node_modules/express/lib/router/index.js:281:22
+2019-08-05T05:56:42.309180+00:00 app[web.1]: at Function.process_params (/app/node_modules/express/lib/router/index.js:335:12)
+2019-08-05T05:56:42.309183+00:00 app[web.1]: at next (/app/node_modules/express/lib/router/index.js:275:10)
+2019-08-05T05:56:42.309185+00:00 app[web.1]: at /app/node_modules/body-parser/lib/read.js:130:5
+2019-08-05T05:56:42.309187+00:00 app[web.1]: at invokeCallback (/app/node_modules/raw-body/index.js:224:16)
+2019-08-05T05:56:42.309189+00:00 app[web.1]: at done (/app/node_modules/raw-body/index.js:213:7)
+2019-08-05T05:56:42.309191+00:00 app[web.1]: at IncomingMessage.onEnd (/app/node_modules/raw-body/index.js:273:7)
+2019-08-05T05:56:42.309194+00:00 app[web.1]: at IncomingMessage.emit (events.js:203:15)
+2019-08-05T05:56:42.309196+00:00 app[web.1]: at endReadableNT (_stream_readable.js:1145:12)
+2019-08-05T05:56:42.309198+00:00 app[web.1]: at process._tickCallback (internal/process/next_tick.js:63:19)
+2019-08-05T05:57:24.153459+00:00 app[web.1]: TypeError: Cannot read property 'action' of undefined
+2019-08-05T05:57:24.153478+00:00 app[web.1]: at exports.processRequest (/app/API/Controllers/ODController.js:9:23)
+2019-08-05T05:57:24.153480+00:00 app[web.1]: at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+2019-08-05T05:57:24.153482+00:00 app[web.1]: at next (/app/node_modules/express/lib/router/route.js:137:13)
+2019-08-05T05:57:24.153485+00:00 app[web.1]: at Route.dispatch (/app/node_modules/express/lib/router/route.js:112:3)
+2019-08-05T05:57:24.153487+00:00 app[web.1]: at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+2019-08-05T05:57:24.153489+00:00 app[web.1]: at /app/node_modules/express/lib/router/index.js:281:22
+2019-08-05T05:57:24.153491+00:00 app[web.1]: at Function.process_params (/app/node_modules/express/lib/router/index.js:335:12)
+2019-08-05T05:57:24.153494+00:00 app[web.1]: at next (/app/node_modules/express/lib/router/index.js:275:10)
+2019-08-05T05:57:24.153496+00:00 app[web.1]: at /app/node_modules/body-parser/lib/read.js:130:5
+2019-08-05T05:57:24.153498+00:00 app[web.1]: at invokeCallback (/app/node_modules/raw-body/index.js:224:16)
+2019-08-05T05:57:24.153500+00:00 app[web.1]: at done (/app/node_modules/raw-body/index.js:213:7)
+2019-08-05T05:57:24.153502+00:00 app[web.1]: at IncomingMessage.onEnd (/app/node_modules/raw-body/index.js:273:7)
+2019-08-05T05:57:24.153504+00:00 app[web.1]: at IncomingMessage.emit (events.js:203:15)
+2019-08-05T05:57:24.153506+00:00 app[web.1]: at endReadableNT (_stream_readable.js:1145:12)
+2019-08-05T05:57:24.153508+00:00 app[web.1]: at process._tickCallback (internal/process/next_tick.js:63:19)
+2019-08-05T05:57:24.154118+00:00 heroku[router]: at=info method=POST path="/" host=order-adjustment-bot.herokuapp.com request_id=be34e3ba-36b9-4d48-8787-378b67757795 fwd="64.233.172.4" dyno=web.1 connect=0ms service=2ms status=500 bytes=404 protocol=https
+2019-08-05T05:58:03.745038+00:00 heroku[router]: at=info method=POST path="/" host=order-adjustment-bot.herokuapp.com request_id=6e0c4704-8afd-4a19-9096-777febb0a79c fwd="64.233.172.19" dyno=web.1 connect=1ms service=2ms status=500 bytes=404 protocol=https
+2019-08-05T05:58:03.742732+00:00 app[web.1]: TypeError: Cannot read property 'action' of undefined
+2019-08-05T05:58:03.742752+00:00 app[web.1]: at exports.processRequest (/app/API/Controllers/ODController.js:9:23)
+2019-08-05T05:58:03.742756+00:00 app[web.1]: at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+2019-08-05T05:58:03.742758+00:00 app[web.1]: at next (/app/node_modules/express/lib/router/route.js:137:13)
+2019-08-05T05:58:03.742760+00:00 app[web.1]: at Route.dispatch (/app/node_modules/express/lib/router/route.js:112:3)
+2019-08-05T05:58:03.742762+00:00 app[web.1]: at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+2019-08-05T05:58:03.742764+00:00 app[web.1]: at /app/node_modules/express/lib/router/index.js:281:22
+2019-08-05T05:58:03.742766+00:00 app[web.1]: at Function.process_params (/app/node_modules/express/lib/router/index.js:335:12)
+2019-08-05T05:58:03.742768+00:00 app[web.1]: at next (/app/node_modules/express/lib/router/index.js:275:10)
+2019-08-05T05:58:03.742770+00:00 app[web.1]: at /app/node_modules/body-parser/lib/read.js:130:5
+2019-08-05T05:58:03.742772+00:00 app[web.1]: at invokeCallback (/app/node_modules/raw-body/index.js:224:16)
+2019-08-05T05:58:03.742774+00:00 app[web.1]: at done (/app/node_modules/raw-body/index.js:213:7)
+2019-08-05T05:58:03.742776+00:00 app[web.1]: at IncomingMessage.onEnd (/app/node_modules/raw-body/index.js:273:7)
+2019-08-05T05:58:03.742779+00:00 app[web.1]: at IncomingMessage.emit (events.js:203:15)
+2019-08-05T05:58:03.742781+00:00 app[web.1]: at endReadableNT (_stream_readable.js:1145:12)
+2019-08-05T05:58:03.742783+00:00 app[web.1]: at process._tickCallback (internal/process/next_tick.js:63:19)
+2019-08-05T05:59:55.060725+00:00 heroku[router]: at=info method=POST path="/" host=order-adjustment-bot.herokuapp.com request_id=db5b07f3-509a-4bb4-93fe-06165cc1f1b0 fwd="64.233.172.2" dyno=web.1 connect=1ms service=4ms status=500 bytes=404 protocol=https
+2019-08-05T05:59:55.058870+00:00 app[web.1]: TypeError: Cannot read property 'action' of undefined
+2019-08-05T05:59:55.059052+00:00 app[web.1]: at exports.processRequest (/app/API/Controllers/ODController.js:9:23)
+2019-08-05T05:59:55.059056+00:00 app[web.1]: at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+2019-08-05T05:59:55.059058+00:00 app[web.1]: at next (/app/node_modules/express/lib/router/route.js:137:13)
+2019-08-05T05:59:55.059060+00:00 app[web.1]: at Route.dispatch (/app/node_modules/express/lib/router/route.js:112:3)
+2019-08-05T05:59:55.059061+00:00 app[web.1]: at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+2019-08-05T05:59:55.059063+00:00 app[web.1]: at /app/node_modules/express/lib/router/index.js:281:22
+2019-08-05T05:59:55.059065+00:00 app[web.1]: at Function.process_params (/app/node_modules/express/lib/router/index.js:335:12)
+2019-08-05T05:59:55.059067+00:00 app[web.1]: at next (/app/node_modules/express/lib/router/index.js:275:10)
+2019-08-05T05:59:55.059068+00:00 app[web.1]: at /app/node_modules/body-parser/lib/read.js:130:5
+2019-08-05T05:59:55.059070+00:00 app[web.1]: at invokeCallback (/app/node_modules/raw-body/index.js:224:16)
+2019-08-05T05:59:55.059072+00:00 app[web.1]: at done (/app/node_modules/raw-body/index.js:213:7)
+2019-08-05T05:59:55.059073+00:00 app[web.1]: at IncomingMessage.onEnd (/app/node_modules/raw-body/index.js:273:7)
+2019-08-05T05:59:55.059075+00:00 app[web.1]: at IncomingMessage.emit (events.js:203:15)
+2019-08-05T05:59:55.059077+00:00 app[web.1]: at endReadableNT (_stream_readable.js:1145:12)
+2019-08-05T05:59:55.059079+00:00 app[web.1]: at process._tickCallback (internal/process/next_tick.js:63:19)
+2019-08-05T06:02:21.313161+00:00 heroku[router]: at=info method=POST path="/" host=order-adjustment-bot.herokuapp.com request_id=202342eb-cdf9-4a60-9418-b873c6f080b4 fwd="64.233.172.15" dyno=web.1 connect=0ms service=1ms status=500 bytes=404 protocol=https
+2019-08-05T06:02:21.312775+00:00 app[web.1]: TypeError: Cannot read property 'action' of undefined
+2019-08-05T06:02:21.312797+00:00 app[web.1]: at exports.processRequest (/app/API/Controllers/ODController.js:9:23)
+2019-08-05T06:02:21.312800+00:00 app[web.1]: at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+2019-08-05T06:02:21.312803+00:00 app[web.1]: at next (/app/node_modules/express/lib/router/route.js:137:13)
+2019-08-05T06:02:21.312805+00:00 app[web.1]: at Route.dispatch (/app/node_modules/express/lib/router/route.js:112:3)
+2019-08-05T06:02:21.312807+00:00 app[web.1]: at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+2019-08-05T06:02:21.312809+00:00 app[web.1]: at /app/node_modules/express/lib/router/index.js:281:22
+2019-08-05T06:02:21.312811+00:00 app[web.1]: at Function.process_params (/app/node_modules/express/lib/router/index.js:335:12)
+2019-08-05T06:02:21.312813+00:00 app[web.1]: at next (/app/node_modules/express/lib/router/index.js:275:10)
+2019-08-05T06:02:21.312815+00:00 app[web.1]: at /app/node_modules/body-parser/lib/read.js:130:5
+2019-08-05T06:02:21.312817+00:00 app[web.1]: at invokeCallback (/app/node_modules/raw-body/index.js:224:16)
+2019-08-05T06:02:21.312819+00:00 app[web.1]: at done (/app/node_modules/raw-body/index.js:213:7)
+2019-08-05T06:02:21.312821+00:00 app[web.1]: at IncomingMessage.onEnd (/app/node_modules/raw-body/index.js:273:7)
+2019-08-05T06:02:21.312824+00:00 app[web.1]: at IncomingMessage.emit (events.js:203:15)
+2019-08-05T06:02:21.312826+00:00 app[web.1]: at endReadableNT (_stream_readable.js:1145:12)
+2019-08-05T06:02:21.312828+00:00 app[web.1]: at process._tickCallback (internal/process/next_tick.js:63:19)
+2019-08-05T06:06:08.164436+00:00 heroku[router]: at=info method=POST path="/" host=order-adjustment-bot.herokuapp.com request_id=eecba47e-4b20-40fa-8322-a03a5c2d1a21 fwd="64.233.172.16" dyno=web.1 connect=1ms service=3ms status=500 bytes=404 protocol=https
+2019-08-05T06:06:08.162019+00:00 app[web.1]: TypeError: Cannot read property 'action' of undefined
+2019-08-05T06:06:08.162035+00:00 app[web.1]: at exports.processRequest (/app/API/Controllers/ODController.js:9:23)
+2019-08-05T06:06:08.162040+00:00 app[web.1]: at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+2019-08-05T06:06:08.162042+00:00 app[web.1]: at next (/app/node_modules/express/lib/router/route.js:137:13)
+2019-08-05T06:06:08.162044+00:00 app[web.1]: at Route.dispatch (/app/node_modules/express/lib/router/route.js:112:3)
+2019-08-05T06:06:08.162046+00:00 app[web.1]: at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+2019-08-05T06:06:08.162048+00:00 app[web.1]: at /app/node_modules/express/lib/router/index.js:281:22
+2019-08-05T06:06:08.162051+00:00 app[web.1]: at Function.process_params (/app/node_modules/express/lib/router/index.js:335:12)
+2019-08-05T06:06:08.162053+00:00 app[web.1]: at next (/app/node_modules/express/lib/router/index.js:275:10)
+2019-08-05T06:06:08.162055+00:00 app[web.1]: at /app/node_modules/body-parser/lib/read.js:130:5
+2019-08-05T06:06:08.162057+00:00 app[web.1]: at invokeCallback (/app/node_modules/raw-body/index.js:224:16)
+2019-08-05T06:06:08.162059+00:00 app[web.1]: at done (/app/node_modules/raw-body/index.js:213:7)
+2019-08-05T06:06:08.162061+00:00 app[web.1]: at IncomingMessage.onEnd (/app/node_modules/raw-body/index.js:273:7)
+2019-08-05T06:06:08.162065+00:00 app[web.1]: at IncomingMessage.emit (events.js:203:15)
+2019-08-05T06:06:08.162067+00:00 app[web.1]: at endReadableNT (_stream_readable.js:1145:12)
+2019-08-05T06:06:08.162069+00:00 app[web.1]: at process._tickCallback (internal/process/next_tick.js:63:19)
