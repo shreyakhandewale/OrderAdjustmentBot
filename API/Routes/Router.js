@@ -5,13 +5,14 @@ module.exports = function(app) {
 	var apiRoutes =  express.Router();
 
 	app.get('/',function(req,res) {
-    	res.send(req.body);
+    	//res.send(req.body);
+    	res.send(":D:D:D:D");
 	});
 
 // registerUser Route
 	app.route('/').post(odController.processRequest);
 
-	app.route('/').put(odController.changeRequest);
+	//app.route('/').put(odController.changeRequest);
 };
 
 
