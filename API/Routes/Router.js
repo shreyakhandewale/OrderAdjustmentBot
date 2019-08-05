@@ -10,10 +10,10 @@ module.exports = function(app) {
 	});
 
 // registerUser Route
-	app.route('/').post(odController.processRequest);
-	//app.post('/', function(req, res) {
-	//	res.send("got a post")
-	//})
+	//app.route('/').post(odController.processRequest);
+	app.post('/', odController.processRequest {
+		res.send("got a post")
+	})
 
 	//app.route('/').put(odController.changeRequest);
 };
