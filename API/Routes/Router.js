@@ -27,18 +27,20 @@ module.exports = function(app) {
 		console.log("got a post");
 		var orderid = req.body.queryResult.parameters["orderid"];
 
+		let responseObj = undefined;
 		if (req.body.queryResult.action == "date") {
-    		odController.getDate(orderid, res);
+    		responseObj = odController.getDate(orderid, res);
   		} 
   		if (req.body.queryResult.action == "address") {
-    		odController.getLocation(req, res);
+    		responseObj = odController.getLocation(req, res);
   		}
   		if (req.body.queryResult.action == "shippingmethod") {
-    		odController.getShipping(req, res);
+    		responseObj = odController.getShipping(req, res);
 		}
 
 	});
 
+	return (responseObj);
 	//app.route('/').put(odController.changeRequest);
 };
 
