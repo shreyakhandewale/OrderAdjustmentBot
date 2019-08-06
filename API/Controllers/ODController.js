@@ -35,13 +35,13 @@ exports.processRequest = function(req, res) {
 //Return the scheduled delivery date
 exports.getDate = function(req, res) {
   
-  console.log('getDate() : req : body : ' + JSON.parse(req.body).orderid);
-  var parameters = req.body.queryResult.parameters;
-  console.log('getDate() : req : orderid : ' + req.body.queryResult.parameters["orderid"] + parameters);
+  console.log('getDate() : req : body : ' + req.query.orderid);
+  var parameters = req.query;
+  console.log('getDate() : req : orderid : ' + parameters.orderid);
   
   res.setHeader('Content-Type', 'application/json');
 
-  OrderDetails.findOne({'orderid' : parameters["orderid"]}, function(err, orderExists) {
+  OrderDetails.findOne({'orderid' : parameters.orderid}, function(err, orderExists) {
     if (err) {
       //console.log("error")
       return res.json({
