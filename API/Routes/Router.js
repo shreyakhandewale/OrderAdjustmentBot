@@ -1,7 +1,9 @@
 'use strict';
 var express = require('express');
+var odController = require('../Controllers/ODController');
+
 module.exports = function(app) {
-  	var odController = require('../Controllers/ODController');
+  	// var odController = require('../Controllers/ODController');
 	var apiRoutes =  express.Router();
 
 	app.get('/',function(req,res) {
@@ -13,7 +15,16 @@ module.exports = function(app) {
 	//app.route('/').post(odController.processRequest);
 	app.post('/', function(req, res) {
 		res.send("got a post")
-	})
+		if (req.body.queryResult.action == "date") {
+    		odController.getDate(req,res);
+  		} 
+  		if (req.body.queryResult.action == "address") {
+    		odController.getLocation(req,res);
+  		}
+  		if (req.body.queryResult.action == "shippingmethod") {
+    		getShipping(req,res);
+		}
+	});
 
 	//app.route('/').put(odController.changeRequest);
 };

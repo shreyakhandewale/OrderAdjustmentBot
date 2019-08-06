@@ -33,7 +33,6 @@ exports.processRequest = function(req, res) {
 function getDate(req, res) {
   let parameters = req.body["queryResult"];
   //console.log(parameters);
-
   OrderDetails.findOne({orderid:parameters["orderid"]}, function(err, orderExists) {
     if (err) {
       //console.log("error")
