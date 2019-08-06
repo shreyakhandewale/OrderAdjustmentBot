@@ -41,7 +41,7 @@ function getDate(req, res) {
       return res.json({
         speech: 'Something went wrong!',
         displayText: 'Something went wrong!',
-        source: 'order info 1';
+        source: 'order info 1'
       });
     }
     if (orderExists) {
@@ -50,14 +50,14 @@ function getDate(req, res) {
       return res.json({
         speech: "Your order is scheduled for " + orderExists.deliverydate + ". When would you like to reschedule your order for?",
         displayText: "Your order is scheduled for " + orderExists.deliverydate + ". When would you like to reschedule your order for?",
-        source: 'order info 2';
+        source: 'order info 2'
       });
     } else {
       //console.log("couldn't find order")
       return res.json({
         speech: 'Sorry, we couldn\'t find your order',
         displayText: 'Sorry, we couldn\'t find your order',
-        source: 'order info 3';
+        source: 'order info 3'
       });
     }
   });
