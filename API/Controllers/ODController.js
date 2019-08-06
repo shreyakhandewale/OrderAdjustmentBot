@@ -33,15 +33,13 @@ exports.processRequest = function(req, res) {
 }*/
 
 //Return the scheduled delivery date
-exports.getDate = function(req, res) {
+exports.getDate = function(orderid, res) {
   
-  console.log('getDate() : req : body : ' + req.query.orderid);
-  var parameters = req.query;
-  console.log('getDate() : req : orderid : ' + parameters.orderid);
+  console.log('getDate() : req : orderid : ' + orderid);
   
   res.setHeader('Content-Type', 'application/json');
 
-  OrderDetails.findOne({'orderid' : parameters.orderid}, function(err, orderExists) {
+  OrderDetails.findOne({'orderid' : orderid}, function(err, orderExists) {
     if (err) {
       //console.log("error")
       return res.json({
@@ -52,7 +50,7 @@ exports.getDate = function(req, res) {
     }
     if (orderExists) {
       //console.log("orderExists")
-      globalorderid = parameters["orderid"];
+      globalorderid = orderid;
       return res.json({
         speech: "Your order is scheduled for " + orderExists.deliverydate + ". When would you like to reschedule your order for?",
         displayText: "Your order is scheduled for " + orderExists.deliverydate + ". When would you like to reschedule your order for?",

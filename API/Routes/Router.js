@@ -13,22 +13,22 @@ module.exports = function(app) {
     });
 
 	app.get('/webhook-get', function(req, res) {
-    	//res.send(req.body);
-    	console.log('Received webhook-get request req : ' + req.originalUrl + ' req.query : ' + req.query + ' order id : ' + req.query.orderid);
+    	var orderid = req.query.orderid;
+    	console.log('Received webhook-get request req : ' + req.originalUrl + ' req.query : ' + req.query + ' order id : ' + orderid);
 
     	let responseObj = odController.getDate(req, res);
 
     	return (responseObj); 
-    	// res.send(":D:D:D:D");
 	});
 
 // registerUser Route
 	//app.route('/').post(odController.processRequest);
 	app.post('/webhook-post', function(req, res) {
 		console.log("got a post");
+		var orderid = req.body.queryResult.parameters["orderid"];
 
 		if (req.body.queryResult.action == "date") {
-    		odController.getDate(req, res);
+    		odController.getDate(orderid, res);
   		} 
   		if (req.body.queryResult.action == "address") {
     		odController.getLocation(req, res);
