@@ -3,7 +3,6 @@ var mongoose = require('mongoose');
 var sleep = require('sleep');
 var OrderDetails = require('../Models/ODModel');
 var globalorderid = 0;
-var db = mongoose.connection;
 
 // var OrderDetails = mongoose.model('OrderDetails', orderDetailsSchema);
 
@@ -36,9 +35,9 @@ exports.processRequest = function(req, res) {
 //Return the scheduled delivery date
 exports.getDate = function(req, res) {
   let parameters = req.body;
-  console.log('getDate() : parameters : ' + parameters);
+  console.log('getDate() : req : parameters : ' req + parameters);
   
-  db.OrderDetails.findOne({orderid:parameters["orderid"]}, function(err, orderExists) {
+  OrderDetails.findOne({'orderid' : parameters["orderid"]}, function(err, orderExists) {
     if (err) {
       //console.log("error")
       return res.json({
@@ -70,7 +69,7 @@ exports.getDate = function(req, res) {
 exports.getLocation = function(req, res) {
   let parameters = req.body["queryResult"];
 
-  db.OrderDetails.findOne({orderid:parameters["orderid"]}, function(err, orderExists) {
+  OrderDetails.findOne({'orderid' : parameters["orderid"]}, function(err, orderExists) {
     if (err) {
       return res.json({
         speech: 'Something went wrong!',
@@ -99,7 +98,7 @@ exports.getLocation = function(req, res) {
 exports.getShipping = function(req, res) {
   let parameters = req.body["queryResult"];
 
-  db.OrderDetails.findOne({orderid:parameters["orderid"]}, function(err, orderExists) {
+  OrderDetails.findOne({'orderid' : parameters["orderid"]}, function(err, orderExists) {
     if (err) {
       return res.json({
         speech: 'Something went wrong!',
@@ -140,7 +139,7 @@ exports.getShipping = function(req, res) {
 exports.changeShipping = function(req, res) {
   let shipping = req.body["result"];
 
-  OrderDetails.findOne({orderid:10001}, function(err, orderExists) {
+  OrderDetails.findOne({'orderid' : 10001}, function(err, orderExists) {
     if (err) {
       return res.json({
         speech: 'Something went wrong!',
