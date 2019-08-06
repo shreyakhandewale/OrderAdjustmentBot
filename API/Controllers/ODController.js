@@ -35,7 +35,7 @@ exports.processRequest = function(req, res) {
 //Return the scheduled delivery date
 exports.getDate = function(req, res) {
   
-  let parameters = req.body.queryResult.parameters;
+  var parameters = req.body.queryResult.parameters;
   console.log('getDate() : req : orderid : ' + req.body.queryResult.parameters["orderid"] + parameters);
   
   res.setHeader('Content-Type', 'application/json');
