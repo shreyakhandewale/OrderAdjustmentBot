@@ -27,7 +27,7 @@ module.exports = function(app) {
 		console.log("got a post");
 		var orderid = req.body.queryResult.parameters["orderid"];
 
-		let responseObj = undefined;
+		var responseObj = undefined;
 		if (req.body.queryResult.action == "date") {
     		responseObj = odController.getDate(orderid, res);
   		} 
