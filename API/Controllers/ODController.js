@@ -34,9 +34,12 @@ exports.processRequest = function(req, res) {
 
 //Return the scheduled delivery date
 exports.getDate = function(req, res) {
-  let parameters = req.body.queryResult.parameters;
-  console.log('getDate() : req : orderid : ' + req.body.queryResult.parameters[orderid] + parameters);
   
+  let parameters = req.body.queryResult.parameters;
+  console.log('getDate() : req : orderid : ' + req.body.queryResult.parameters["orderid"] + parameters);
+  
+  res.setHeader('Content-Type', 'application/json');
+
   OrderDetails.findOne({'orderid' : parameters["orderid"]}, function(err, orderExists) {
     if (err) {
       //console.log("error")
@@ -67,7 +70,12 @@ exports.getDate = function(req, res) {
 
 //Return the scheduled shipping address
 exports.getLocation = function(req, res) {
-  let parameters = req.body["queryResult"];
+  
+  let parameters = req.body.queryResult.parameters;
+  console.log('getDate() : req : orderid : ' + req.body.queryResult.parameters["orderid"] + parameters);
+  
+  res.setHeader('Content-Type', 'application/json');
+
 
   OrderDetails.findOne({'orderid' : parameters["orderid"]}, function(err, orderExists) {
     if (err) {
@@ -96,7 +104,11 @@ exports.getLocation = function(req, res) {
 
 //Return the current shipping method
 exports.getShipping = function(req, res) {
-  let parameters = req.body["queryResult"];
+
+  let parameters = req.body.queryResult.parameters;
+  console.log('getDate() : req : orderid : ' + req.body.queryResult.parameters["orderid"] + parameters);
+  
+  res.setHeader('Content-Type', 'application/json');
 
   OrderDetails.findOne({'orderid' : parameters["orderid"]}, function(err, orderExists) {
     if (err) {
@@ -137,9 +149,16 @@ exports.getShipping = function(req, res) {
 
 //Update shipping method
 exports.changeShipping = function(req, res) {
-  let shipping = req.body["result"];
+  // let shipping = req.body["result"];
 
-  OrderDetails.findOne({'orderid' : 10001}, function(err, orderExists) {
+
+  let parameters = req.body.queryResult.parameters;
+  console.log('getDate() : req : orderid : ' + req.body.queryResult.parameters["orderid"] + parameters);
+  
+  var shipping = parameters["result"];
+  res.setHeader('Content-Type', 'application/json');
+
+  OrderDetails.findOne({'orderid' : parameters["orderid"]}, function(err, orderExists) {
     if (err) {
       return res.json({
         speech: 'Something went wrong!',
