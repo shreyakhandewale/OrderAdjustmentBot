@@ -32,7 +32,7 @@ exports.processRequest = function(req, res) {
 }*/
 
 //Return the scheduled delivery date
-function getDate(req, res) {
+exports.getDate = function(req, res) {
   let parameters = req.body["queryResult"];
   //console.log(parameters);
   OrderDetails.findOne({orderid:parameters["orderid"]}, function(err, orderExists) {
@@ -64,7 +64,7 @@ function getDate(req, res) {
 }
 
 //Return the scheduled shipping address
-function getLocation(req, res) {
+exports.getLocation = function(req, res) {
   let parameters = req.body["queryResult"];
 
   OrderDetails.findOne({orderid:parameters["orderid"]}, function(err, orderExists) {
@@ -93,7 +93,7 @@ function getLocation(req, res) {
 }
 
 //Return the current shipping method
-function getShipping(req, res) {
+exports.getShipping = function(req, res) {
   let parameters = req.body["queryResult"];
 
   OrderDetails.findOne({orderid:parameters["orderid"]}, function(err, orderExists) {
@@ -134,7 +134,7 @@ function getShipping(req, res) {
 }*/
 
 //Update shipping method
-function changeShipping(req, res) {
+exports.changeShipping = function(req, res) {
   let shipping = req.body["result"];
 
   OrderDetails.findOne({orderid:10001}, function(err, orderExists) {
