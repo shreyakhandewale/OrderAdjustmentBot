@@ -6,16 +6,21 @@ module.exports = function(app) {
   	// var odController = require('../Controllers/ODController');
 	var apiRoutes =  express.Router();
 
-	app.get('/',function(req,res) {
+	app.get('/webhook-get', function(req, res) {
     	//res.send(req.body);
+    	console.log('Received webhook-get request:' + req);
+
+    	let responseObj = odController.getDate(req, res);
+
+    	return (responseObj); 
     	res.send(":D:D:D:D");
 	});
 
 // registerUser Route
 	//app.route('/').post(odController.processRequest);
-	app.post('/', function(req, res) {
+	app.post('/webhook-post', function(req, res) {
 		console.log("got a post");
-		
+
 		if (req.body.queryResult.action == "date") {
     		odController.getDate(req, res);
   		} 
@@ -25,6 +30,7 @@ module.exports = function(app) {
   		if (req.body.queryResult.action == "shippingmethod") {
     		odController.getShipping(req, res);
 		}
+
 	});
 
 	//app.route('/').put(odController.changeRequest);
