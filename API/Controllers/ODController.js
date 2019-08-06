@@ -59,7 +59,7 @@ exports.getDate = function(orderid, res) {
     } else {
       //console.log("couldn't find order")
       return res.json({
-        speech: 'Sorry, we couldn\'t find your order' + parameters["orderid"],
+        speech: 'Sorry, we couldn\'t find your order' + orderid,
         displayText: 'Sorry, we couldn\'t find your order',
         source: 'order info 3'
       });
