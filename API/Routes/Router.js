@@ -14,15 +14,16 @@ module.exports = function(app) {
 // registerUser Route
 	//app.route('/').post(odController.processRequest);
 	app.post('/', function(req, res) {
-		res.send("got a post")
+		console.log("got a post");
+		
 		if (req.body.queryResult.action == "date") {
-    		odController.getDate(req,res);
+    		odController.getDate(req, res);
   		} 
   		if (req.body.queryResult.action == "address") {
-    		odController.getLocation(req,res);
+    		odController.getLocation(req, res);
   		}
   		if (req.body.queryResult.action == "shippingmethod") {
-    		getShipping(req,res);
+    		odController.getShipping(req, res);
 		}
 	});
 
