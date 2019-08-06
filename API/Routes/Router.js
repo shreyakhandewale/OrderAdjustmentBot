@@ -27,7 +27,7 @@ module.exports = function(app) {
 		console.log("got a post");
 		var orderid = req.body.queryResult.parameters["orderid"];
 
-		var responseObj = undefined;
+		let responseObj = undefined;
 		if (req.body.queryResult.action == "date") {
     		responseObj = odController.getDate(orderid, res);
   		} 
@@ -38,10 +38,10 @@ module.exports = function(app) {
     		responseObj = odController.getShipping(req, res);
 		}
 
+		return (responseObj);
 	});
 
-	return (responseObj);
-	//app.route('/').put(odController.changeRequest);
+		//app.route('/').put(odController.changeRequest);
 };
 
 
