@@ -35,8 +35,8 @@ exports.processRequest = function(req, res) {
 
 //Return the scheduled delivery date
 exports.getDate = function(req, res) {
-  let parameters = req.body["queryResult"];
-  console.log('getDate() : parameters : ' + parameters);
+  let parameters = req.body;
+  console.log('getDate() : parameters : ' + parameters[]);
   
   db.OrderDetails.findOne({orderid:parameters["orderid"]}, function(err, orderExists) {
     if (err) {
