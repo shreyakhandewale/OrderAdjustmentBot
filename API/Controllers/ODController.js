@@ -34,8 +34,8 @@ exports.processRequest = function(req, res) {
 
 //Return the scheduled delivery date
 exports.getDate = function(req, res) {
-  let parameters = req.body;
-  console.log('getDate() : req : parameters : ' + req + parameters);
+  let parameters = req.body.queryResult.parameters;
+  console.log('getDate() : req : orderid : ' + req.body.queryResult.parameters[orderid] + parameters);
   
   OrderDetails.findOne({'orderid' : parameters["orderid"]}, function(err, orderExists) {
     if (err) {
@@ -57,7 +57,7 @@ exports.getDate = function(req, res) {
     } else {
       //console.log("couldn't find order")
       return res.json({
-        speech: 'Sorry, we couldn\'t find your order',
+        speech: 'Sorry, we couldn\'t find your order' + parameters["orderid"],
         displayText: 'Sorry, we couldn\'t find your order',
         source: 'order info 3'
       });
