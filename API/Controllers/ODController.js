@@ -52,14 +52,14 @@ exports.getDate = function(orderid, res) {
       //console.log("orderExists")
       globalorderid = orderid;
       return res.json({
-        "fulfillmentText": [{"text": {"text": "Your order is scheduled for " + [orderExists.deliverydate] + ". When would you like to reschedule your order for?"}}],
+        "fulfillmentText": "Your order is scheduled for " + orderExists.deliverydate + ". When would you like to reschedule your order for?",
         // "fulfillmentMessages": [{"text": {"text": [orderExists.deliverydate] + ". When would you like to reschedule your order for?"}}],
         "source": "order info 2"
       });
     } else {
       //console.log("couldn't find order")
       return res.json({
-        "fulfillmentText": [{"text":"Sorry, we couldn't find your order" + [orderid]}],
+        "fulfillmentText": "Sorry, we couldn't find your order : " + orderid,
         // "fulfillmentMessages": [{"text": {"text": "Sorry, we couldn't find your order"}}],
         "source": "order info 3"
       });
