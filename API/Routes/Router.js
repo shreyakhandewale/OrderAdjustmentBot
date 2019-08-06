@@ -16,7 +16,7 @@ module.exports = function(app) {
     	var orderid = req.query.orderid;
     	console.log('Received webhook-get request req : ' + req.originalUrl + ' req.query : ' + req.query + ' order id : ' + orderid);
 
-    	let responseObj = odController.getDate(req, res);
+    	let responseObj = odController.getDate(orderid, res);
 
     	return (responseObj); 
 	});
