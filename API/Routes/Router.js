@@ -14,7 +14,7 @@ module.exports = function(app) {
 
 	app.get('/webhook-get', function(req, res) {
     	//res.send(req.body);
-    	console.log('Received webhook-get request:' + req);
+    	console.log('Received webhook-get request : ' + req + req.query);
 
     	let responseObj = odController.getDate(req, res);
 
