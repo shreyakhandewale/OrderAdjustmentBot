@@ -15,7 +15,7 @@ mongoose.Promise = global.Promise;
 mongoose.connect(config.dbUrl);
 
 // Let's make sure we are connected
-var db = mongoose.connection;
+var exports.db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error'));
 db.once('open', function() {
 	console.log('We are connected to the MUNGI database!');

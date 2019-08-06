@@ -19,7 +19,7 @@ module.exports = function(app) {
     	let responseObj = odController.getDate(req, res);
 
     	return (responseObj); 
-    	res.send(":D:D:D:D");
+    	// res.send(":D:D:D:D");
 	});
 
 // registerUser Route
