@@ -2,7 +2,7 @@
 var mongoose = require('mongoose');
 var sleep = require('sleep');
 var OrderDetails = require('../Models/ODModel');
-var globalorderid = 0;
+//var globalorderid = 0;
 
 // var OrderDetails = mongoose.model('OrderDetails', orderDetailsSchema);
 
@@ -34,14 +34,12 @@ exports.processRequest = function(req, res) {
 
 //Return the scheduled delivery date
 exports.getDate = function(orderid, res) {
-  
-  console.log('getDate() : req : orderid : ' + orderid);
+  //console.log('getDate() : req : orderid : ' + orderid);
   
   res.setHeader('Content-Type', 'application/json');
 
   OrderDetails.findOne({'orderid' : orderid}, function(err, orderExists) {
     if (err) {
-      //console.log("error")
       return res.json({
         "fulfillmentText":"Something went wrong!",
         "fulfillmentMessages":[{"text": {"text": ["Something went wrong!"]}}],
@@ -49,15 +47,12 @@ exports.getDate = function(orderid, res) {
       });
     }
     if (orderExists) {
-      //console.log("orderExists")
-      globalorderid = orderid;
       return res.json({
         "fulfillmentText": "Your order is scheduled for " + orderExists.deliverydate + ". When would you like to reschedule your order for?",
-        "fulfillmentMessages": [{"text": {"text": [orderExists.deliverydate + ". When would you like to reschedule your order for?"]}}],
+        "fulfillmentMessages": [{"text": {"text": ["Your order is scheduled for " + orderExists.deliverydate + ". When would you like to reschedule your order for?"]}}],
         "source": "order info 2"
       });
     } else {
-      //console.log("couldn't find order")
       return res.json({
         "fulfillmentText": "Sorry, we couldn't find your order.",
         "fulfillmentMessages": [{"text": {"text": ["Sorry, we couldn't find your order"]}}],
@@ -70,32 +65,27 @@ exports.getDate = function(orderid, res) {
 //Return the scheduled shipping address
 exports.getLocation = function(req, res) {
   
-  let parameters = req.body.queryResult.parameters;
-  console.log('getDate() : req : orderid : ' + req.body.queryResult.parameters["orderid"] + parameters);
-  
   res.setHeader('Content-Type', 'application/json');
 
-
-  OrderDetails.findOne({'orderid' : parameters["orderid"]}, function(err, orderExists) {
+  OrderDetails.findOne({'orderid' : orderid}, function(err, orderExists) {
     if (err) {
       return res.json({
-        speech: 'Something went wrong!',
-        displayText: 'Something went wrong!',
-        source: 'order info 1'
+        "fulfillmentText":"Something went wrong!",
+        "fulfillmentMessages":[{"text": {"text": ["Something went wrong!"]}}],
+        "source": 'order info 1'
       });
     }
     if (orderExists) {
-      globalorderid = parameters["orderid"];
       return res.json({
-        speech: "Your current delivery address is " + orderExists.shippingaddress + ". Please enter the new address you want your package dropped off at.",
-        displayText: "Your current delivery address is " + orderExists.shippingaddress + ". Please enter the new address you want your package dropped off at.",
-        source: 'order info 2'
+        "fulfillmentText": "Your current delivery address is " + orderExists.shippingaddress + ". Please enter the new address you want your package dropped off at.",
+        "fulfillmentMessages": [{"text": {"text": ["Your current delivery address is " + orderExists.shippingaddress + ". Please enter the new address you want your package dropped off at."]}}],
+        "source": "order info 2"
       });
     } else {
       return res.json({
-        speech: 'Sorry, we couldn\'t find your order',
-        displayText: 'Sorry, we couldn\'t find your order',
-        source: 'order info 3'
+        "fulfillmentText": "Sorry, we couldn't find your order.",
+        "fulfillmentMessages": [{"text": {"text": ["Sorry, we couldn't find your order"]}}],
+        "source": "order info 3"
       });
     }
   });
@@ -104,31 +94,28 @@ exports.getLocation = function(req, res) {
 //Return the current shipping method
 exports.getShipping = function(req, res) {
 
-  let parameters = req.body.queryResult.parameters;
-  console.log('getDate() : req : orderid : ' + req.body.queryResult.parameters["orderid"] + parameters);
-  
   res.setHeader('Content-Type', 'application/json');
 
-  OrderDetails.findOne({'orderid' : parameters["orderid"]}, function(err, orderExists) {
+  OrderDetails.findOne({'orderid' : orderid}, function(err, orderExists) {
     if (err) {
       return res.json({
-        speech: 'Something went wrong!',
-        displayText: 'Something went wrong!',
-        source: 'order info 1'
+        "fulfillmentText":"Something went wrong!",
+        "fulfillmentMessages":[{"text": {"text": ["Something went wrong!"]}}],
+        "source": 'order info 1'
       });
     }
     if (orderExists) {
-      globalorderid = parameters["orderid"];
+      
       return res.json({
-        speech: "Your current shipping method is " + orderExists.shippingmethod + ". What would you like to change your shipping method to?",
-        displayText: "Your current shipping method is " + orderExists.shippingmethod + ". What would you like to change your shipping method to?",
-        source: 'order info 2'
+        "fulfillmentText": "Your current shipping method is " + orderExists.shippingmethod + ". What would you like to change your shipping method to?",
+        "fulfillmentMessages": [{"text": {"text": ["Your current shipping method is " + orderExists.shippingmethod + ". What would you like to change your shipping method to?"]}}],
+        "source": "order info 2"
       });
     } else {
       return res.json({
-        speech: 'Sorry, we couldn\'t find your order',
-        displayText: 'Sorry, we couldn\'t find your order',
-        source: 'order info 3'
+        "fulfillmentText": "Sorry, we couldn't find your order.",
+        "fulfillmentMessages": [{"text": {"text": ["Sorry, we couldn't find your order"]}}],
+        "source": "order info 3"
       });
     }
   });
