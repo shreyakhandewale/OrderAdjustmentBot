@@ -63,7 +63,7 @@ exports.getDate = function(orderid, res) {
 }
 
 //Return the scheduled shipping address
-exports.getLocation = function(req, res) {
+exports.getLocation = function(orderid, res) {
   
   res.setHeader('Content-Type', 'application/json');
 
@@ -92,7 +92,7 @@ exports.getLocation = function(req, res) {
 }
 
 //Return the current shipping method
-exports.getShipping = function(req, res) {
+exports.getShipping = function(orderid, res) {
 
   res.setHeader('Content-Type', 'application/json');
 
@@ -105,7 +105,6 @@ exports.getShipping = function(req, res) {
       });
     }
     if (orderExists) {
-      
       return res.json({
         "fulfillmentText": "Your current shipping method is " + orderExists.shippingmethod + ". What would you like to change your shipping method to?",
         "fulfillmentMessages": [{"text": {"text": ["Your current shipping method is " + orderExists.shippingmethod + ". What would you like to change your shipping method to?"]}}],
