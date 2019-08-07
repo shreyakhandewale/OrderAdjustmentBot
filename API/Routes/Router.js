@@ -32,10 +32,10 @@ module.exports = function(app) {
     		responseObj = odController.getDate(orderid, res);
   		} 
   		if (req.body.queryResult.action == "address") {
-    		responseObj = odController.getLocation(req, res);
+    		responseObj = odController.getLocation(orderid, res);
   		}
   		if (req.body.queryResult.action == "shippingmethod") {
-    		responseObj = odController.getShipping(req, res);
+    		responseObj = odController.getShipping(orderid, res);
 		}
 
 		return (responseObj);
